@@ -4,8 +4,7 @@ Write notes from Neovim into a given folder.
 ```
 return {
   {
-    "magnusblondal/hux.nvim",
-    opts = {
+      "magnusblondal/hux.nvim"
       path_to_obsidian = '$HOME/Documents/Obsidian/in'
     },
     keys = {

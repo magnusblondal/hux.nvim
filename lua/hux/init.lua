@@ -89,10 +89,10 @@ local function proc_note(note)
 end
 
 function M.setup(opts)
-  opts = opts or {}
+  M.opts = opts or {}
   vim.api.nvim_create_user_command("HuxNote", M.note_command, { desc = "Write args as note", nargs = 1 })
-  vim.api.nvim_create_user_command("HuxBuffer", M.note_from_visual, { desc = "Write current buffer as note to Obsidian" })
-  M.opts = opts
+  vim.api.nvim_create_user_command("HuxBuffer", M.note_from_visual,
+    { desc = "Write current buffer as note to Obsidian" })
   M.path_valid = setup_path()
 end
 
