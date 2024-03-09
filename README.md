@@ -1,10 +1,10 @@
 # Hux: Notetaking into Obsidian inbox
 Write notes from Neovim into a given folder.
-
+## Lazy
 ```
 return {
   {
-    dir = "~/code/nvim_plugins/hux.nvim",
+    "magnusblondal/hux.nvim",
     opts = {
       path_to_obsidian = '$HOME/Documents/Obsidian/in'
     },
